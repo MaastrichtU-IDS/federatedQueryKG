@@ -26,6 +26,7 @@ You may need a VISA or E-VISA for entering Turkey. The situation may be differen
 - [Visa information](https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa)
 - [E-visa application](https://www.evisa.gov.tr/en/) (The website is a bit slow, but it's working.)
 
+If you need an invitation letter in your (E-)VISA application process, our local organizers from Turkey agree to write an official signed invitation letter for people in need of a visa or e-visa. In this case, please send an email to Fatmana fatmanas@pau.edu.tr. 
 
 ### Transportation ###
 #### Fights ####
