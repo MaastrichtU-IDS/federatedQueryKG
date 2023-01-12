@@ -46,7 +46,7 @@ If you prefer other Booking.com, Air BNB, and other options for alternative acco
 ### Currency ###
 We suggest having some cash in Turkish lira with you in case you need it. Most places accept debit and credit cards.  
 
-## During the workshop ##
+## Reimbursement ##
 It is **very important** to sign the attendance sheet every single day when you are in the workshop. This is required to get the reimbursement from COST Action. 
 
 After the event, you will need to fill a claim form in the COST Action system. The claim form will be available after you accept the invitation to this workshop. You will need to fill in your arrival and departure time and transportation tickets. The hotel invoice and receipt for the meals are not required for daily allowance from COST Action but good to keep them of course.
