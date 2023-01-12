@@ -31,7 +31,7 @@ You may need a VISA or E-VISA for entering Turkey. The situation may be differen
 #### Fights ####
 You can fly to [Izmir Adnan Menderes Airport](https://adnanmenderesairport.com/en-EN/). You can check the arrival information from Izmir Airport Website to find the reasonal and economical flights that are leaving from an airport where is close to your city. You can also use [this website](https://www.flightconnections.com/flights-to-izmir-adb) to find flights. The transportation allowance is limited to 400€ per person. 
 
-#### Transportation in Izmire ####
+#### Transportation in Izmir ####
 The visitors arriving from Izmir Adnan Menderes Airport can travel to the hotel by using a few transportation options:
 1. Access by Public Buses: Use bus 202, which departs from the airport, to get there. At the bus, you can purchase the tickets. At the stop labeled “İzmir Mesleki ve Teknik Anadolu Lisesi” you must get off the bus. They will get to the hotel after a three to four minute walk. [Bus timetable](https://www.eshot.gov.tr/en/UlasimSaatleri/289) is available.
 2. Access by HAVAŞ Buses: To go to the area where the hotel is situated in Çankaya, you can take private buses named “HAVAŞ” that depart from Izmir Adnan Menderes airport.
