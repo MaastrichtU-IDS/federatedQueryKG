@@ -7,7 +7,7 @@
 **Event Time**: 25th-27th April 2023 \
 **Location**: [KORDON OTEL ÇANKAYA](https://www.kordonotel.com.tr/), Izmir, Turkey \
             (Address: Gazi Osman Pasa Bulvarı No:13 Çankaya/Konak/ İZMİR) \
-**Sponsor**: Thanks to [COST Action](https://www.cost.eu/) for sponsoring this workshop. \
+**Sponsor**: Thanks to [COST](https://www.cost.eu/) and, in particular, the [DKG COST Action](https://cost-dkg.eu/) for sponsoring this workshop. \
 **This repository** is used to post event information, to share use case material, data description and access, query engine information and configuration files, code, and to document the progress and outcome of the event. 
 
 
