@@ -85,7 +85,7 @@ For participants funded by the COST Action, after the event, you will need to fi
 * ? (Nantes University, France)
 * Maribel Acosta (Ruhr-Universität Bochum, Germany)
 * Maria-Esther Vidal (TIB Leibniz Information Center for Science and Technology, Germany)
-* Philipp Rohde (TIB Leibniz Information Center for Science and Technology, Germany)
+* Philipp D. Rohde (TIB Leibniz Information Center for Science and Technology, Germany)
 * Michel Dumontier (Maastricht University, The Netherlands)
 * Amr Azzam (Vienna University of Economics and Business, Austria)
 * María del Mar Roldán (Universidad de Málaga, Spain)
