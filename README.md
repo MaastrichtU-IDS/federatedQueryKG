@@ -60,6 +60,8 @@ It is **very important** to sign the attendance sheet every single day when you 
 
 For participants funded by the COST Action, after the event, you will need to fill a claim form in the COST portal. The claim form will be available after you accept the invitation to this workshop (see above). You will need to fill in your arrival and departure time and upload travel tickets. In contrast to the travel allowance, for claiming the daily allowance (which is also meant to cover your accommodation, in addition to meals) you do *not* need to provide any proof (such as hotel invoice or receipts for meals).
 
+Please read COST Action Travel Reimbursement Rules (from 2022) about what can or cannot be reimbursed by our funder: https://www.cost.eu/uploads/2022/09/Travel-Reimbursement-Rules_March_2022.pdf
+
 ## Organizers ##
 
 * [Chang Sun](https://www.maastrichtuniversity.nl/chang.sun) (Maastricht University, The Netherlands)
