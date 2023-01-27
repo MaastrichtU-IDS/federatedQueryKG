@@ -45,12 +45,13 @@ The visitors arriving from Izmir Adnan Menderes Airport can travel to the event 
 2. Access by HAVAŞ Buses: To go to the area where the hotel is situated in Çankaya, you can take private buses named “HAVAŞ” that depart from Izmir Adnan Menderes airport.
 3. Access by Metro: From the airport, you can take trains between 05:15 and 23:59. You need to buy İzmirKart at the airport. You must board an Izban train headed in the direction of Aliağa or Menemen and get off at the “HalkaPınar” stop. From HalkaPınar station, you need to switch to Metro in the direction of Fahrettin Altay and get off at the “Çankaya” stop. After a 5- to 6-minute walk, you can get to the hotel.
 
-### Accommendation ###
-If you want to stay in the hotel where the workshop is going to take place, you can book through the [hotel website](https://www.kordonotel.com.tr/en-gb/kordon-cankaya-home) or by sending an email to rezervasyon@kordonotel.com.tr with the subject “COST_FEDKG”. The cost is 90€ per night including breakfast. 
+### Accommodation ###
+For participants funded by the COST Action, the expenses for accommodation are included in the daily allowance which is a maximum of 140€ per person per day. Please note that the daily allowance includes your hotel stays and meals. 
 
-If you prefer other Booking.com, Air BNB, and other options for alternative accommodation are also available.
+The event venue (KORDON hotel) is fully booked now, so we advise the participants to look for other hotels in **Alsancak** as well as the accommodations in **Karsiyaka** and **Bornova** that are close to  tram, metro and ferry stations
 
-For participants funded by the COST Action, the expenses for accommodation are included in the daily allowance which is a maximum of 140€ per person per day.
+You can book the hotel via Booking.com, Hotels.com, Air BNB, and other options for alternative accommodation.
+
 
 ### Currency ###
 While most places accept debit and credit cards, we suggest having some cash in Turkish Lira with you in case you need it. 
