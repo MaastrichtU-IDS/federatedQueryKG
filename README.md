@@ -48,7 +48,7 @@ The visitors arriving from Izmir Adnan Menderes Airport can travel to the event 
 ### Accommodation ###
 For participants funded by the COST Action, the expenses for accommodation are included in the daily allowance which is a maximum of 140€ per person per day. Please note that the daily allowance includes your hotel stays and meals. 
 
-The event venue (KORDON hotel) is fully booked now, so we advise the participants to look for other hotels in **Alsancak** as well as the accommodations in **Karsiyaka** and **Bornova** that are close to  tram, metro and ferry stations
+The event venue (KORDON hotel) is fully booked now, so we advise the participants to look for other hotels in **Alsancak** as well as the accommodations in **Karsiyaka** and **Bornova** that are close to  tram, metro and ferry stations. For example, here are some possible hotel options: **Gran Via Hotels Alsancak**, **Ontur Hotel**, or **Tanik Hotel**. We do not have agreements or official contacts with these hotels, but participants can book through websites such as Booking.com or Hotels.com.
 
 You can book the hotel via Booking.com, Hotels.com, Air BNB, and other options for alternative accommodation.
 
