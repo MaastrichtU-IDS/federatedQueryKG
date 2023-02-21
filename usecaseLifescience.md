@@ -19,7 +19,7 @@ FILTER (?p = goa:process || ?p = goa:component || ?p = goa:function)
 
 
 ```
-This query retrieves information about drugs and their GO terms by following the relationships between drugs, targets, and proteins in the different data sources, and using the specified properties and classes to identify and filter the relevant concepts and entities.
-This SPARQL query retrieves information about drugs and their gene ontology (GO) terms from three Bio2RDF data sources in a centeralize repository: DrugBank, HGNC (HUGO Gene Nomenclature Committee), and GOA (Gene Ontology Annotation). 
+This query retrieves information about drugs and their gene ontology (GO) terms by following the relationships between drugs, targets, and proteins in the different data sources, and using the specified properties and classes to identify and filter the relevant concepts and entities.
+This SPARQL query returns results from three Bio2RDF data sources located in a centeralized repository: DrugBank, HGNC (HUGO Gene Nomenclature Committee), and GOA (Gene Ontology Annotation). 
 
-Data sources can be downloaded from Zenodo link: https://zenodo.org/record/3770918#.Y71gq-zMJA1 
+RDF data sources can be downloaded from Zenodo link: https://zenodo.org/record/3770918#.Y71gq-zMJA1 
