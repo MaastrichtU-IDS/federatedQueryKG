@@ -12,6 +12,8 @@ Here is an example of a query to run on the WikiPathway endpoint that will retri
 * Map gene URIs (http is used in Wikipathways, https is used in KG-hub)
 * Retrieve pathways in which those genes are present from the KG-hub endpoint (https://github.com/Knowledge-Graph-Hub/kg-covid-19)
 
+Run the query below on https://sparql.wikipathways.org/sparql
+
 ```SPARQL
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
