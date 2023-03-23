@@ -1,5 +1,14 @@
 In this use case, participants are requested to efficiently re-write and execute the query listed below, which uses many data sources, in federated manner.
 
+The participants will need to answer the queries by retrieving and joining informations from multiple SPARQL endpoints among this list of endpoints:
+
+* Bio2RDF drugbank: to host on GraphDB at https://graphdb.dumontierlab.com
+* Bio2RDF HGNC: to host on Stardog at https://stardog.137.120.31.102.nip.io (create db `federated-demo`)
+* Bio2RDF goa: to host on [oxigraph](https://github.com/oxigraph/oxigraph) 
+* Wikipathways: hosted on Virtuoso at https://sparql.wikipathways.org/sparql
+* KG-hub Covid-kg hosted on Blazegraph at http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
+* Wikidata hosted on Blazegraph at https://query.wikidata.org
+
 ## Wikipathways x BioLink 
 
 Question: "For each gene present in the kg-covid-19 endpoint, retrieve the pathways this gene is part of in the WikiPathways endpoint"
@@ -12,7 +21,28 @@ Here is an example of a query to run on the WikiPathway endpoint that will retri
 * Map gene URIs (http is used in Wikipathways, https is used in KG-hub)
 * Retrieve pathways in which those genes are present from the KG-hub endpoint (https://github.com/Knowledge-Graph-Hub/kg-covid-19)
 
-Run the query below on https://sparql.wikipathways.org/sparql
+The query should look a bit like this when running through the federation engines:
+
+```SPARQL
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wp:      <http://vocabularies.wikipathways.org/wp#>
+PREFIX dc:      <http://purl.org/dc/elements/1.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+PREFIX bl: <https://w3id.org/biolink/vocab/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?gene ?geneLabel ?pathway ?pathwayLabel
+WHERE {
+    ?gene bl:category bl:Gene ;
+          rdfs:label ?geneLabel ;
+          dct:isPartOf ?pathway .
+    ?pathway dc:title ?pathwayLabel .
+}
+```
+
+And here is the solution using a `SERVICE` call, run the query below on https://sparql.wikipathways.org/sparql
 
 ```SPARQL
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
