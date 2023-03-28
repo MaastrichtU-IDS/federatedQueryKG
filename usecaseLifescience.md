@@ -4,10 +4,11 @@ The participants will need to answer the queries by retrieving and joining infor
 
 * Bio2RDF drugbank: to host on GraphDB at https://graphdb.dumontierlab.com
 * Bio2RDF HGNC: to host on Stardog at https://stardog.137.120.31.102.nip.io (create db `federated-demo`)
-* Bio2RDF goa: to host on [oxigraph](https://github.com/oxigraph/oxigraph) 
+* Bio2RDF goa: to host on [oxigraph](https://github.com/oxigraph/oxigraph)?
 * Wikipathways: hosted on Virtuoso at https://sparql.wikipathways.org/sparql
 * KG-hub Covid-kg hosted on Blazegraph at http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
 * Wikidata hosted on Blazegraph at https://query.wikidata.org
+* Bioregistry hosted using rdflib-endpoint at https://bioregistry.io/sparql
 
 ## Wikipathways x BioLink 
 
@@ -79,6 +80,36 @@ Pathways URI are in the format `https://identifiers.org/wikipathways/WP4790_r116
 > * Wikidata queries about COVID: https://egonw.github.io/SARS-CoV-2-Queries/
 
 Next step: connect to Wikidata to get the URI of the gene on Wikidata. This can be easily done by matching the gene ID on the property "Ensembl gene ID" (https://www.wikidata.org/wiki/Property:P594)
+
+## WikiPathways x Bioregistry x Bio2RDF
+
+Get genes from WikiPathways (which have [identifiers.org/ncbigene](http://identifiers.org/ncbigene) URIs) and map them to HGNC external references in Bio2RDF. Doing so will require to use the Bioregistry SPARQL endpoint to convert the WikiPathways NCBIGene ID to its Bio2RDF equivalent.
+
+Here is an example of federated query to run on https://sparql.wikipathways.org/sparql that should enable it (but note that it times out when reaching Bio2RDF, probably due to some Virtuoso specificity):
+
+```SPARQL
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+select distinct ?geneProduct ?label ?bio2rdf_ncbigene ?bio2rdf_hgnc where {
+  {
+    select * where {
+      ?miriam_ncbigene a wp:GeneProduct . 
+      ?miriam_ncbigene rdfs:label ?label .
+    } limit 1
+  }
+    
+  SERVICE <https://bioregistry.io/sparql> {
+    ?miriam_ncbigene owl:sameAs ?bio2rdf_ncbigene .
+  }
+  
+  SERVICE <https://bio2rdf.org/sparql> {
+    FILTER contains(str(?bio2rdf_ncbigene), "bio2rdf")
+    ?bio2rdf_hgnc <http://bio2rdf.org/hgnc_vocabulary:x-ncbigene> ?bio2rdf_ncbigene 
+  }
+}
+```
 
 ## Bio2RDF query
 
