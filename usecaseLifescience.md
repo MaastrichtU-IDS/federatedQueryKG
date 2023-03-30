@@ -5,12 +5,12 @@ The participants will need to answer the queries by retrieving and joining infor
 * Bio2RDF drugbank: to host on GraphDB at https://graphdb.dumontierlab.com
 * Bio2RDF HGNC: to host on Stardog at https://stardog.137.120.31.102.nip.io (create db `federated-demo`)
 * Bio2RDF goa: to host on [oxigraph](https://github.com/oxigraph/oxigraph)?
-* Wikipathways: hosted on Virtuoso at https://sparql.wikipathways.org/sparql
+* WikiPathways: hosted on Virtuoso at https://sparql.wikipathways.org/sparql
 * KG-hub Covid-kg hosted on Blazegraph at http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
 * Wikidata hosted on Blazegraph at https://query.wikidata.org
 * Bioregistry hosted using rdflib-endpoint at https://bioregistry.io/sparql
 
-## Wikipathways x BioLink 
+## WikiPathways x BioLink 
 
 Question: "For each gene present in the kg-covid-19 endpoint, retrieve the pathways this gene is part of in the WikiPathways endpoint"
 
@@ -18,8 +18,8 @@ Get pathways from WikiPathways for Genes in the kg-covid-19 knowledge graph"
 
 Here is an example of a query to run on the WikiPathway endpoint that will retrieve informations about genes in the KG-hub covid KG:
 
-* Retrieve gene labels from Wikipathways (https://www.wikipathways.org/)
-* Map gene URIs (http is used in Wikipathways, https is used in KG-hub)
+* Retrieve gene labels from WikiPathways (https://www.wikipathways.org/)
+* Map gene URIs (http is used in WikiPathways, https is used in KG-hub)
 * Retrieve pathways in which those genes are present from the KG-hub endpoint (https://github.com/Knowledge-Graph-Hub/kg-covid-19)
 
 The query should look a bit like this when running through the federation engines:
