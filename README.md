@@ -16,6 +16,11 @@ Federated querying, an essential technology for the effective and scalable imple
 
 This hackathon will bring together use case providers and providers of federation tools with the goal of defining the "challenges" and use cases of federation engines. Before the hackathon event, three use case providers will prepare the description of the problems and challenges, ensure the datasets are findable and accessible during event, and prepare potential queries that will be used in the hackathon event. The tool providers will test their federation engines or virtual KG integration systems, and provide clear documentation in order to address the challenges brought by the use cases.  
 
+## Use cases ##
+- [E-learning](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseE-learning.md)
+- [Life science](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseLifescience.md)
+- [Federated Shop](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseFedShop.md)
+
 ## Agenda ##
 The agenda is available now in this Github repo - [agenda.md](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/agenda.md). We encourage you to fill in the [form](https://forms.gle/ZWWJigFGYeZ3Nsfp7) about your dietary restriction and your willingness to have dinner and social event together.
 
