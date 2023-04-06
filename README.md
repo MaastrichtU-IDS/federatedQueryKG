@@ -16,6 +16,9 @@ Federated querying, an essential technology for the effective and scalable imple
 
 This hackathon will bring together use case providers and providers of federation tools with the goal of defining the "challenges" and use cases of federation engines. Before the hackathon event, three use case providers will prepare the description of the problems and challenges, ensure the datasets are findable and accessible during event, and prepare potential queries that will be used in the hackathon event. The tool providers will test their federation engines or virtual KG integration systems, and provide clear documentation in order to address the challenges brought by the use cases.  
 
+## Agenda ##
+The agenda is available now in this Github repo - [agenda.md](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/agenda.md). We encourage you to fill in the [form](https://forms.gle/ZWWJigFGYeZ3Nsfp7) about your dietary restriction and your willingness to have dinner and social event together.
+
 ## Registration ##
 The participants have been invited by the organizers. Participants whose participation is funded by the DKG COST Action will receive an official invitation email from the Action and will need to accept that invitation by logging in to the [COST portal](http://e-services.cost.eu/). To this end, they need to create an account at the portal, unless they already have one (which should be the case for all members of working groups of the Action). 
 
