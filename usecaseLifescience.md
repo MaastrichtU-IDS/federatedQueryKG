@@ -18,9 +18,9 @@ The participants will need to answer the queries by retrieving and joining infor
 
 ## WikiPathways x BioLink 
 
-Question: "For each gene present in the kg-covid-19 endpoint, retrieve the pathways each gene is part of in the WikiPathways endpoint"
+*Question:* "For each gene present in the kg-covid-19 endpoint, retrieve the pathways each gene is part of in the WikiPathways endpoint"
 
-Get pathways from WikiPathways for Genes in the kg-covid-19 knowledge graph"
+In other words: "Get pathways from WikiPathways for Genes in the kg-covid-19 knowledge graph"
 
 Here is an example of a query to run on the WikiPathway endpoint that will retrieve informations about genes in the KG-hub covid KG:
 
@@ -88,9 +88,7 @@ WHERE {
 
 ## WikiPathways x Wikidata
 
-Same questions as above, but this time we also want to retrieve additional information from Wikidata for the gene.
-
-From WikiPathways retrieve all genes that are part of the "GPR40 pathway" (https://identifiers.org/wikipathways/WP3958_r117148), and for each of these genes find all found orthologs, and in which taxon those orthologs are found.
+*Question:* From WikiPathways retrieve all genes that are part of the "GPR40 pathway" (https://identifiers.org/wikipathways/WP3958_r117148), and for each of these genes find all found orthologs, and in which taxon those orthologs are found.
 
 The SPARQL query to WikiPathways should start like this (we let you figure out the rest for Wikidata!):
 
@@ -107,7 +105,7 @@ You can find an example of a matching gene product with orthologs in this wikida
 
 ## WikiPathways x Bioregistry x Bio2RDF
 
-Get genes from WikiPathways (which have [identifiers.org/ncbigene](http://identifiers.org/ncbigene) URIs), and map them to their HGNC external references in Bio2RDF. Doing so will require to use the Bioregistry SPARQL endpoint to convert the WikiPathways NCBIGene ID to its Bio2RDF equivalent.
+*Question:* Get genes from WikiPathways (which have [identifiers.org/ncbigene](http://identifiers.org/ncbigene) URIs), and map them to their HGNC external references in Bio2RDF. Doing so will require to use the Bioregistry SPARQL endpoint to convert the WikiPathways NCBIGene ID to its Bio2RDF equivalent.
 
 Here is an example of a start of a regular federated query to run on https://sparql.wikipathways.org/sparql:
 
