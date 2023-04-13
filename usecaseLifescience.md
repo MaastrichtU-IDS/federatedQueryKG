@@ -1,25 +1,31 @@
-In this use case, participants are requested to efficiently re-write and execute the query listed below, which uses many data sources, in federated manner.
+# 🩸 Life Science use-case for federated queries
 
-The participants will need to answer the queries by retrieving and joining informations from multiple SPARQL endpoints among this list of endpoints:
+In these use-cases, participants are requested to efficiently re-write and execute the query listed below, which uses many data sources, in federated manner.
 
-* Bio2RDF drugbank: to host on GraphDB at https://graphdb.dumontierlab.com
-* Bio2RDF HGNC: to host on Stardog at https://stardog.137.120.31.102.nip.io (create db `federated-demo`)
-* Bio2RDF goa: to host on [oxigraph](https://github.com/oxigraph/oxigraph)?
-* WikiPathways: hosted on Virtuoso at https://sparql.wikipathways.org/sparql
-* KG-hub Covid-kg hosted on Blazegraph at http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
-* Wikidata hosted on Blazegraph at https://query.wikidata.org
-* Bioregistry hosted using rdflib-endpoint at https://bioregistry.io/sparql
+The participants will need to answer the queries by retrieving and joining informations from multiple SPARQL endpoints among this **list of endpoints**:
+
+* **WikiPathways**: hosted on Virtuoso at https://sparql.wikipathways.org/sparql
+* **KG-hub Covid-kg**: hosted on Blazegraph at http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
+* **Wikidata**: hosted on Blazegraph at https://query.wikidata.org
+* **Bioregistry**: hosted using rdflib-endpoint at https://bioregistry.io/sparql
+* **Bio2RDF**: datasets available as whole in a Virtuoso at https://bio2rdf.org/sparql
+  * Drugbank: to host on GraphDB at https://graphdb.dumontierlab.com (note: GraphDB free edition does not handle multiple queries at the same time, it waits for the previous query to finish. Sending too many complex queries might get it stuck, which will require a hard restart from the server)
+  * HGNC: to host on Stardog? at https://stardog.137.120.31.102.nip.io (create db `federated-demo`)
+  * GOA: to host on [oxigraph](https://github.com/oxigraph/oxigraph)?
+
+
+> ⚠️ Unfortunately the latest published version of the mentioned Bio2RDF datasets is not valid RDF, because the URIs contains spaces. So we could not load those 3 Bio2RDF datasets to separate triplestores (they all fail due to spaces in URIs).
 
 ## WikiPathways x BioLink 
 
-Question: "For each gene present in the kg-covid-19 endpoint, retrieve the pathways this gene is part of in the WikiPathways endpoint"
+Question: "For each gene present in the kg-covid-19 endpoint, retrieve the pathways each gene is part of in the WikiPathways endpoint"
 
 Get pathways from WikiPathways for Genes in the kg-covid-19 knowledge graph"
 
 Here is an example of a query to run on the WikiPathway endpoint that will retrieve informations about genes in the KG-hub covid KG:
 
 * Retrieve gene labels from WikiPathways (https://www.wikipathways.org/)
-* Map gene URIs (http is used in WikiPathways, https is used in KG-hub)
+* Map gene URIs (note that http is used in WikiPathways, https is used in KG-hub)
 * Retrieve pathways in which those genes are present from the KG-hub endpoint (https://github.com/Knowledge-Graph-Hub/kg-covid-19)
 
 The query should look a bit like this when running through the federation engines:
@@ -43,7 +49,16 @@ WHERE {
 }
 ```
 
-And here is the solution using a `SERVICE` call, run the query below on https://sparql.wikipathways.org/sparql
+It should return ~94 results. 
+
+Genes URI are in the format `http://identifiers.org/ensembl/ENSG00000008710`
+
+Pathways URI are in the format `https://identifiers.org/wikipathways/WP4790_r116413`
+
+<details><summary>Click here to see the solution with regular SPARQL using a <code>SERVICE</code> call</summary>
+
+Run the query below on https://sparql.wikipathways.org/sparql
+
 
 ```SPARQL
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -69,23 +84,32 @@ WHERE {
 }
 ```
 
-Genes URI are in the format `http://identifiers.org/ensembl/ENSG00000047936`
+</details>
 
-Pathways URI are in the format `https://identifiers.org/wikipathways/WP4790_r116413`
+## WikiPathways x Wikidata
 
-> Search for other SPARQL endpoints that can be connected to the genes or pathways in this query:
->
-> * https://umaka-viewer.dbcls.jp/public_data_sets
-> * http://index.semanticscience.org/
-> * Wikidata queries about COVID: https://egonw.github.io/SARS-CoV-2-Queries/
+Same questions as above, but this time we also want to retrieve additional information from Wikidata for the gene.
 
-Next step: connect to Wikidata to get the URI of the gene on Wikidata. This can be easily done by matching the gene ID on the property "Ensembl gene ID" (https://www.wikidata.org/wiki/Property:P594)
+From WikiPathways retrieve all genes that are part of the "GPR40 pathway" (https://identifiers.org/wikipathways/WP3958_r117148), and for each of these genes find all found orthologs, and in which taxon those orthologs are found.
+
+The SPARQL query to WikiPathways should start like this (we let you figure out the rest for Wikidata!):
+
+```SPARQL
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+SELECT DISTINCT *
+WHERE {
+  	?ensemblGene a wp:GeneProduct ;
+  		dct:isPartOf <https://identifiers.org/wikipathways/WP3958_r117148> .
+}
+```
+
+You can find an example of a matching gene product with orthologs in this wikidata page: https://www.wikidata.org/wiki/Q14914567
 
 ## WikiPathways x Bioregistry x Bio2RDF
 
-Get genes from WikiPathways (which have [identifiers.org/ncbigene](http://identifiers.org/ncbigene) URIs) and map them to HGNC external references in Bio2RDF. Doing so will require to use the Bioregistry SPARQL endpoint to convert the WikiPathways NCBIGene ID to its Bio2RDF equivalent.
+Get genes from WikiPathways (which have [identifiers.org/ncbigene](http://identifiers.org/ncbigene) URIs), and map them to their HGNC external references in Bio2RDF. Doing so will require to use the Bioregistry SPARQL endpoint to convert the WikiPathways NCBIGene ID to its Bio2RDF equivalent.
 
-Here is an example of federated query to run on https://sparql.wikipathways.org/sparql that should enable it (but note that it times out when reaching Bio2RDF, probably due to some Virtuoso specificity):
+Here is an example of a start of a regular federated query to run on https://sparql.wikipathways.org/sparql:
 
 ```SPARQL
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
