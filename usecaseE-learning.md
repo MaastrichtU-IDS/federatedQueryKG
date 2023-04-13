@@ -43,7 +43,7 @@ MUD data are stored in three different RDF repositories.
 
       SPARQL Enpoint: https://log-mud.khaos.uma.es/sparql
      
-  Source files: https://khaos.uma.es/movilidad/oulad/
+  Source files: https://khaos.uma.es/movilidad/mud/
      
   These three RDF repositories are built according to the same OWL ontology.
 
