@@ -1,0 +1,4 @@
+*.nq
+*.gz
+.env
+/data
