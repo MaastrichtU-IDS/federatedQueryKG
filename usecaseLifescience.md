@@ -1,6 +1,6 @@
 # 🩸 Life Science use-case for federated queries
 
-In these use-cases, participants are requested to efficiently re-write and execute the query listed below, which uses many data sources, in federated manner.
+In these use-cases, participants are requested to efficiently re-write and execute the queries listed below, which uses many data sources, in a federated manner.
 
 The participants will need to answer the queries by retrieving and joining informations from multiple SPARQL endpoints among this **list of endpoints**:
 
@@ -9,12 +9,6 @@ The participants will need to answer the queries by retrieving and joining infor
 * **Wikidata**: hosted on Blazegraph at https://query.wikidata.org
 * **Bioregistry**: hosted using rdflib-endpoint at https://bioregistry.io/sparql
 * **Bio2RDF**: datasets available as whole in a Virtuoso at https://bio2rdf.org/sparql
-  * Drugbank: to host on GraphDB at https://graphdb.dumontierlab.com (note: GraphDB free edition does not handle multiple queries at the same time, it waits for the previous query to finish. Sending too many complex queries might get it stuck, which will require a hard restart from the server)
-  * HGNC: to host on Stardog? at https://stardog.137.120.31.102.nip.io (create db `federated-demo`)
-  * GOA: to host on [oxigraph](https://github.com/oxigraph/oxigraph)?
-
-
-> ⚠️ Unfortunately the latest published version of the mentioned Bio2RDF datasets is not valid RDF, because the URIs contains spaces. So we could not load those 3 Bio2RDF datasets to separate triplestores (they all fail due to spaces in URIs).
 
 ## WikiPathways x BioLink 
 
@@ -88,7 +82,7 @@ WHERE {
 
 ## WikiPathways x Wikidata
 
-*Question:* From WikiPathways retrieve all genes that are part of the "GPR40 pathway" (https://identifiers.org/wikipathways/WP3958_r117148), and for each of these genes find all found orthologs, and in which taxon those orthologs are found.
+*Question:* From WikiPathways retrieve all genes that are part of the "GPR40 pathway" (https://identifiers.org/wikipathways/WP3958_r117148), and for each of these genes find all known orthologs, and in which taxon those orthologs can be found.
 
 The SPARQL query to WikiPathways should start like this (we let you figure out the rest for Wikidata!):
 
@@ -106,6 +100,8 @@ You can find an example of a matching gene product with orthologs in this wikida
 ## WikiPathways x Bioregistry x Bio2RDF
 
 *Question:* Get genes from WikiPathways (which have [identifiers.org/ncbigene](http://identifiers.org/ncbigene) URIs), and map them to their HGNC external references in Bio2RDF. Doing so will require to use the Bioregistry SPARQL endpoint to convert the WikiPathways NCBIGene ID to its Bio2RDF equivalent.
+
+<details><summary>Potential example answer here</summary>
 
 Here is an example of a start of a regular federated query to run on https://sparql.wikipathways.org/sparql:
 
@@ -129,9 +125,13 @@ select distinct ?geneProduct ?label ?bio2rdf_ncbigene ?bio2rdf_hgnc where {
   SERVICE <https://bio2rdf.org/sparql> {
     FILTER contains(str(?bio2rdf_ncbigene), "bio2rdf")
     ?bio2rdf_hgnc <http://bio2rdf.org/hgnc_vocabulary:x-ncbigene> ?bio2rdf_ncbigene 
+                  
   }
 }
 ```
+
+</details>
+
 
 ## Bio2RDF query
 
@@ -153,4 +153,4 @@ SELECT DISTINCT ?drug ?go
 This query retrieves information about drugs and their gene ontology (GO) terms by following the relationships between drugs, targets, and proteins in the different data sources, and using the specified properties and classes to identify and filter the relevant concepts and entities.
 This SPARQL query returns results from three Bio2RDF data sources located in a centeralized repository: DrugBank, HGNC (HUGO Gene Nomenclature Committee), and GOA (Gene Ontology Annotation). 
 
-RDF data sources can be downloaded from Zenodo link: https://zenodo.org/record/3770918#.Y71gq-zMJA1 
+> RDF data sources can be downloaded from Zenodo link: https://zenodo.org/record/3770918#.Y71gq-zMJA1 
