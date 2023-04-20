@@ -5,12 +5,14 @@ You can find a word version of this Agenda [here](https://docs.google.com/docume
 
 Join us online? [Zoom link](https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09)
 
+** Please note that all times indicated are in local Turkish time zone
+
 
 ### DAY 1 - 25th April ###
 |**Start**|**End**|**Duration**|**Title**|**Description**|
 |:----|:----|:----|:----|:----|
 |09:00|09:30|00:30|Opening [Hybrid](https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09))|Welcome speech and Introduction of the whole hackathon including objectives, content, agenda, etc.|
-|09:35|11:00|01:30|Presentations [Hybrid](https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09)|Short presentations from all tool providers and use cases. (including what the tool/use case is, any challenges, potential solutions, etc)(5 min for each presentation, 9-10 tools, 3 use cases)Send your slides to the organizers in advance|
+|09:30|11:00|01:30|Presentations [Hybrid](https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09)|Short presentations from all tool providers and use cases. (including what the tool/use case is, any challenges, potential solutions, etc)(5 min for each presentation, 9-10 tools, 3 use cases)Send your slides to the organizers in advance|
 |11:00|12:00|01:00|Team Formation|Participants will team up and work on one of the use cases using different tools.Tool providers will decide what use case(s) they would like to work on (ranking use cases)|
 |12:00|13:00|01:00|Lunch|Lunch is provided at the venue. (Fill in your dietary restrictions using the **form** above). Please note that Lunch is paid only for COST Action funded participants. Self-funded participants need to pay at the hotel. Thanks for your understanding.|
 |13:00|17:30|04:30|Hacking|Intense work session with your team|
@@ -22,9 +24,9 @@ Join us online? [Zoom link](https://maastrichtuniversity.zoom.us/j/92527411343?p
 |Start|End|Duration|Title|Description|
 |:----|:----|:----|:----|:----|
 |09:00|11:30|02:30|Hacking|Intense work session with your team|
-|11:35|11:00|00:30|Progress update|Each team provides an update on their progress and their plans/goals for the next hacking session. (Please prepare)|
+|11:30|12:00|00:30|Progress update|Each team provides an update on their progress and their plans/goals for the next hacking session. (Please prepare)|
 |12:00|13:00|01:00|Lunch|Lunch is provided at the venue. (Fill in your dietary restrictions using the form above.) Please note that Lunch is paid only for COST Action funded participants. Self-funded participants need to pay at the hotel. Thanks for your understanding.|
-|13:00|17:30|02:30|Hacking|Intense work session with your team|
+|13:00|17:30|04:30|Hacking|Intense work session with your team|
 |17:30|18:00|00:30|Progress update|Each team provides an update again.|
 |19:30|-|-|Dinner/ Social activity  (optional)|Dinner option is the same as the previous day.Social activity: If you would like to have a tour in Izmir with the group, please fill in the form above.|
 
@@ -32,8 +34,8 @@ Join us online? [Zoom link](https://maastrichtuniversity.zoom.us/j/92527411343?p
 ### DAY 3 - 25th April ###
 |Start|End|Duration|Title|Description|
 |:----|:----|:----|:----|:----|
-|09:00|01:3|01:30|Hacking|Intense work session with your team|
-|10:30|10:00|01:30|Presentations [Hybrid]((https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09))|Report presentation from each team (details such as presentation time and format will be communicated on the day)|
+|09:00|10:30|01:30|Hacking|Intense work session with your team|
+|10:30|12:00|01:30|Presentations [Hybrid](https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09)|Report presentation from each team (details such as presentation time and format will be communicated on the day)|
 |12:00|13:00|01:00|Lunch|Lunch is provided at the venue. (Fill in your dietary restrictions using the form above.) Please note that Lunch is paid only for COST Action funded participants. Self-funded participants need to pay at the hotel. Thanks for your understanding.|
 |13:00|15:30|02:30|Write-up|Write down the description of challenges and what part of use cases you/your team worked on, the instructions for dummies.|
 |15:30|16:00|00:30|Closing [Hybrid](https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09)|Wrap-up: conclusion, lessons learnt, and next steps|
