@@ -33,7 +33,7 @@ Join us online? [Zoom link](https://maastrichtuniversity.zoom.us/j/92527411343?p
 |Start|End|Duration|Title|Description|
 |:----|:----|:----|:----|:----|
 |09:00|01:3|01:30|Hacking|Intense work session with your team|
-|10:30|10:00|01:30|Presentations (Hybrid)|Report presentation from each team (details such as presentation time and format will be communicated on the day)|
+|10:30|10:00|01:30|Presentations [Hybrid]((https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09))|Report presentation from each team (details such as presentation time and format will be communicated on the day)|
 |12:00|13:00|01:00|Lunch|Lunch is provided at the venue. (Fill in your dietary restrictions using the form above.) Please note that Lunch is paid only for COST Action funded participants. Self-funded participants need to pay at the hotel. Thanks for your understanding.|
 |13:00|15:30|02:30|Write-up|Write down the description of challenges and what part of use cases you/your team worked on, the instructions for dummies.|
 |15:30|16:00|00:30|Closing [Hybrid](https://maastrichtuniversity.zoom.us/j/92527411343?pwd=Z3ZsTlNuWklrVGk1amZNM3NlbTg4dz09)|Wrap-up: conclusion, lessons learnt, and next steps|
