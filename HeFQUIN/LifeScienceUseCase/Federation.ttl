@@ -1,0 +1,19 @@
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX fd:     <http://www.example.org/se/liu/ida/hefquin/fd#>
+PREFIX ex:     <http://example.org/>
+
+ex:KGHub
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql> ] .
+
+ex:WikiPathways
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <https://sparql.wikipathways.org/sparql> ] .
+
+ex:BioRegistry
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <https://bioregistry.io/sparql> ] .
