@@ -60,3 +60,8 @@ The main objective of this study is to train a machine learning algorithm capabl
 ## Federated Queries 
 
 We need to define several SPARQL queries to achieve the proposed analytic use case. The following [link](https://colab.research.google.com/drive/1R9BmNzLidU00yhQVnfr2WF7jL-AaO-15?usp=sharing) describes the analytical process to predict the students' grades. You should specify the queries and write them in the corresponding cell.
+
+
+## Hackathon Worklog 25 April ##
+1. Explained the use case and went through the Colab notebook from the use case provider [Link](https://colab.research.google.com/drive/1R9BmNzLidU00yhQVnfr2WF7jL-AaO-15?usp=sharing)
+2. Metaphactory temporary installation: https://ec2-54-221-48-173.compute-1.amazonaws.com/ (Login name and password: user / user)
