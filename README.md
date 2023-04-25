@@ -18,6 +18,14 @@ This hackathon will bring together use case providers and providers of federatio
 
 Workshop materials are shared in this [Google Folder](https://drive.google.com/drive/folders/1dg-S4ccPXXbf9fOFqKBfG7KeQ_4qVd8C?usp=share_link)
 
+## Tool Providers (Presentation slides) ##
+- [Comunica](https://www.rubensworks.net/raw/slides/2023/costdkg-fedhackathon/)
+- [Metaphactory](https://drive.google.com/file/d/1b898tKX2L5l1LFqWRY9EiyYSIXzYHQLA/view?usp=share_link)
+- [ColChain](http://aebeloe.com/files/cost_fedkg_colchain.pdf)
+- [CostFed](https://www.slideshare.net/muhammad_saleem/costfed-costbased-query-optimization-for-sparql-endpoint-federation?from_action=save)
+- [Semagrow & KOBE](https://users.iit.demokritos.gr/~antru/federatedQueryKG_Semagrow_KOBE.pdf)
+- [HeFQUIN](https://docs.google.com/presentation/d/14MhRqXsPqvpLqOufMDV1kf4t27mNdoWUrGKseOANfG8/edit?usp=sharing)
+
 ## Use cases ##
 - [E-learning](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseE-learning.md)
 - [Life science](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseLifescience.md)
