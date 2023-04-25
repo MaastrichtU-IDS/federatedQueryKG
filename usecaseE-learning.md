@@ -65,3 +65,4 @@ We need to define several SPARQL queries to achieve the proposed analytic use ca
 ## Hackathon Worklog 25 April ##
 1. Explained the use case and went through the Colab notebook from the use case provider [Link](https://colab.research.google.com/drive/1R9BmNzLidU00yhQVnfr2WF7jL-AaO-15?usp=sharing)
 2. Metaphactory temporary installation: https://ec2-54-221-48-173.compute-1.amazonaws.com/ (Login name and password: user / user)
+3. Start page: https://ec2-54-221-48-173.compute-1.amazonaws.com/resource/Hackathon 
