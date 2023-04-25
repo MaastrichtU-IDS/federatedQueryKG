@@ -38,3 +38,6 @@ SELECT DISTINCT ?product ?label WHERE {
 ORDER BY ?product ?label
 LIMIT 10
 ```
+
+## Documentation (with edit right for the duration of Hackthon)
+https://docs.google.com/document/d/1yjeehn40P01x4xZnw2UECPXmNxIAXZgrepx79YA6vBo/edit?usp=sharing
