@@ -1,0 +1,27 @@
+PREFIX oulad: <https://ontologies.khaos.uma.es/oulad/>
+
+SELECT *
+#SELECT ?code_module ?code_presentation ?user_id (SUM(?click) AS ?sum_clicks)
+WHERE {
+
+  SERVICE <https://module-oulad.khaos.uma.es/sparql> {
+    VALUES ?vle {
+      <https://ontologies.khaos.uma.es/movilidad/oulad/vle897154GGG2014Jou>
+      <https://ontologies.khaos.uma.es/movilidad/oulad/vle897089GGG2014Jou>
+      <https://ontologies.khaos.uma.es/movilidad/oulad/vle897153GGG2014Jou>
+      <https://ontologies.khaos.uma.es/movilidad/oulad/vle897152GGG2014Jou>
+    }
+    ?vle oulad:vle_has_course ?course.
+    ?course oulad:code_module ?code_module.
+    ?course oulad:code_presentation ?code_presentation.
+  }
+
+  SERVICE <https://student-oulad.khaos.uma.es/sparql> {
+    ?student_vle oulad:student_vle_has_vle ?vle.
+    ?student_vle oulad:sum_click ?click.
+    ?student_vle oulad:student_vle_has_student_info ?student_info.
+    ?student_info oulad:id_student ?user_id.
+  }
+
+}
+#GROUP BY ?code_module ?code_presentation ?user_id

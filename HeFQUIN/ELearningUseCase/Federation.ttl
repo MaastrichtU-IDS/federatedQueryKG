@@ -1,0 +1,14 @@
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX fd:     <http://www.example.org/se/liu/ida/hefquin/fd#>
+PREFIX ex:     <http://example.org/>
+
+ex:OULADStudents
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <https://student-oulad.khaos.uma.es/sparql> ] .
+
+ex:OULADModule
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <https://module-oulad.khaos.uma.es/sparql> ] .

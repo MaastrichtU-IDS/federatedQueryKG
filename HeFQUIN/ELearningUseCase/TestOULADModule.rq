@@ -1,0 +1,9 @@
+PREFIX oulad: <https://ontologies.khaos.uma.es/oulad/>
+
+SELECT * WHERE {
+
+  SERVICE <https://module-oulad.khaos.uma.es/sparql> {
+    <https://ontologies.khaos.uma.es/movilidad/oulad/vle897089GGG2014Jou> oulad:vle_has_course ?course.
+  }
+
+}

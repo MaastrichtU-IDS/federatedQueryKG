@@ -1,0 +1,13 @@
+PREFIX oulad: <https://ontologies.khaos.uma.es/oulad/>
+
+SELECT * WHERE {
+
+  SERVICE <https://student-oulad.khaos.uma.es/sparql> {
+    ?student_vle oulad:student_vle_has_vle <https://ontologies.khaos.uma.es/movilidad/oulad/vle897089GGG2014Jou>.
+    
+    #?student_vle oulad:sum_click ?click.
+    #?student_vle oulad:student_vle_has_student_info ?student_info.
+    #?student_info oulad:id_student ?user_id.
+  }
+
+}
