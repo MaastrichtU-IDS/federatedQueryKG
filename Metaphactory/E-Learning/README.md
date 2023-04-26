@@ -17,20 +17,20 @@ Use case Colab notebook can be found [Here](https://colab.research.google.com/dr
 #### Installation in metaphactory
 
 * Setup a metaphactory instance 
-- Andreas created an instance from metaphactory AWS cloud directly. You can access the created instance [here](https://ec2-54-221-48-173.compute-1.amazonaws.com/resource/Hackathon) with user/password: user/user
-- You can also request a trial from [MetaFacts](https://metaphacts.com/get-started): AWS Cloud version or local Docker container version. 
+  - Andreas created an instance from metaphactory AWS cloud directly. You can access the created instance [here](https://ec2-54-221-48-173.compute-1.amazonaws.com/resource/Hackathon) with user/password: user/user
+  - You can also request a trial from [MetaFacts](https://metaphacts.com/get-started): AWS Cloud version or local Docker container version. 
 
 * Install the virtuoso-wrapper app (Admin -> Apps) and hackathon-results app (Admin -> Apps)
-- The virtuoso-wrapper app file and hackathon-results app file are configured by Andreas which are uploaded in this repository 
-- Log in to Metaphactory and go to Admin (right top on the page) and choose "App & Storages"
-- Click "Upload & Deploy App" and upload the virtuoso-wrapper and hackathon-results files.
-- Metaphactory will need to Restart and you can refresh your page after Restart and login again. 
+  - The virtuoso-wrapper app file and hackathon-results app file are configured by Andreas which are uploaded in this repository 
+  - Log in to Metaphactory and go to Admin (right top on the page) and choose "App & Storages"
+  - Click "Upload & Deploy App" and upload the virtuoso-wrapper and hackathon-results files.
+  - Metaphactory will need to Restart and you can refresh your page after Restart and login again. 
 
 * Import the OULAD ontology (Assets -> Ontologies)
-- Go to Assets (Top right on page) and ontologies. Then Click Import.
+  - Go to Assets (Top right on page) and ontologies. Then Click Import.
 
 * Import the E-Lion ontology (Assets -> Ontologies)
-- Go to Assets (Top right on page) and ontologies. Then Click Import.
+  - Go to Assets (Top right on page) and ontologies. Then Click Import.
 
 ## Description of the setup
 
