@@ -17,6 +17,8 @@ Federated querying, an essential technology for the effective and scalable imple
 This hackathon will bring together use case providers and providers of federation tools with the goal of defining the "challenges" and use cases of federation engines. Before the hackathon event, three use case providers will prepare the description of the problems and challenges, ensure the datasets are findable and accessible during event, and prepare potential queries that will be used in the hackathon event. The tool providers will test their federation engines or virtual KG integration systems, and provide clear documentation in order to address the challenges brought by the use cases.  
 
 Workshop materials are shared in this [Google Folder](https://drive.google.com/drive/folders/1dg-S4ccPXXbf9fOFqKBfG7KeQ_4qVd8C?usp=share_link)
+- [Opening Slides](https://docs.google.com/presentation/d/14MhRqXsPqvpLqOufMDV1kf4t27mNdoWUrGKseOANfG8/edit?usp=sharing)
+- [Report Presentation Slides](https://docs.google.com/presentation/d/1fgDeUaH9dAioT-l2r8WlbRET4U3WwFOgn-a_DLqqJ9U/edit?usp=sharing)
 
 ## Tool Providers (Presentation slides) ##
 - [Comunica](https://www.rubensworks.net/raw/slides/2023/costdkg-fedhackathon/)
