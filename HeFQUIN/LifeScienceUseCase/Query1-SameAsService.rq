@@ -9,7 +9,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 PREFIX bl: <https://w3id.org/biolink/vocab/>
 PREFIX up: <http://purl.uniprot.org/core/>
 
-SELECT * WHERE {
+SELECT ?geneLabel ?pathwayLabel WHERE {
 
   SERVICE <http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql> {
     ?gene bl:category bl:Gene ;
