@@ -15,8 +15,10 @@ __Status.__ HeFQUIN is still under development. At the point of the hackathon, H
 # Achievements
 During the hackathon we worked on two of the three use cases, namely the [life-science use case](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseLifescience.md) and the [e-learning use case](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseE-learning.md). The respective artifacts created in this context and instructions on how to run the tested use case queries can be found in the corresponding subdirectories ([./LifeScienceUseCase](https://github.com/MaastrichtU-IDS/federatedQueryKG/tree/main/HeFQUIN/LifeScienceUseCase) and [./ELearningUseCase](https://github.com/MaastrichtU-IDS/federatedQueryKG/tree/main/HeFQUIN/ELearningUseCase)).
 
-While working on the use cases, we discovered the following bugs in HeFQUIN and managed to fix most of them on the spot.
+While working on the use cases, we discovered the following bugs in HeFQUIN and managed to fix most of them right away.
 * Error in merging multiple endpoints for filter ([issue #6](https://github.com/MaastrichtU-IDS/federatedQueryKG/issues/6)) - status: fixed by PR [HeFQUIN#290](https://github.com/LiUSemWeb/HeFQUIN/pull/290)
 * Error in filter on merging results ([issue #7](https://github.com/MaastrichtU-IDS/federatedQueryKG/issues/7)) - status: fixed by PR [HeFQUIN#290](https://github.com/LiUSemWeb/HeFQUIN/pull/290)
 * Error due to property path pattern within SERVICE clause ([issue #8](https://github.com/MaastrichtU-IDS/federatedQueryKG/issues/8)) - status: fixed by PR [HeFQUIN#290](https://github.com/LiUSemWeb/HeFQUIN/pull/290)
-* No support for BIND in between SERVICE clauses ([issue #9]([issue #9](https://github.com/MaastrichtU-IDS/federatedQueryKG/issues/9))) - status: PR ready for review ([HeFQUIN#291](https://github.com/LiUSemWeb/HeFQUIN/pull/291))
+* No support for BIND in between SERVICE clauses ([issue #9](https://github.com/MaastrichtU-IDS/federatedQueryKG/issues/9)) - status: PR ready for review ([HeFQUIN#291](https://github.com/LiUSemWeb/HeFQUIN/pull/291))
+* Issue with calling mapping service ([issue #10](https://github.com/MaastrichtU-IDS/federatedQueryKG/issues/10)) - status: identified as an [issue of the mapping service](https://github.com/biopragmatics/bioregistry/issues/804) and not of HeFQUIN
+* Vocabulary mapping based rewriting of query patterns with FILTER fails - status: fixed (see [commit](https://github.com/LiUSemWeb/HeFQUIN/commit/8efde463ed672dc12c2565541ad468b155a47361))
