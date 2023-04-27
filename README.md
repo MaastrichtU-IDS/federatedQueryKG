@@ -19,6 +19,7 @@ This hackathon will bring together use case providers and providers of federatio
 Workshop materials are shared in this [Google Folder](https://drive.google.com/drive/folders/1dg-S4ccPXXbf9fOFqKBfG7KeQ_4qVd8C?usp=share_link)
 - [Opening Slides](https://docs.google.com/presentation/d/14MhRqXsPqvpLqOufMDV1kf4t27mNdoWUrGKseOANfG8/edit?usp=sharing)
 - [Report Presentation Slides](https://docs.google.com/presentation/d/1fgDeUaH9dAioT-l2r8WlbRET4U3WwFOgn-a_DLqqJ9U/edit?usp=sharing)
+- [Write-Up Report](https://docs.google.com/document/d/16PnsVsXLKnwm38LKy3XJ0bZc2keUjy6VCPlFROuxrZA/edit)
 
 ## Tool Providers (Presentation slides) ##
 - [Comunica](https://www.rubensworks.net/raw/slides/2023/costdkg-fedhackathon/)
