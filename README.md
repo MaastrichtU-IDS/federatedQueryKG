@@ -26,7 +26,7 @@ Workshop materials are shared in this [Google Folder](https://drive.google.com/d
 - [ColChain](http://aebeloe.com/files/cost_fedkg_colchain.pdf)
 - [CostFed](https://www.slideshare.net/muhammad_saleem/costfed-costbased-query-optimization-for-sparql-endpoint-federation?from_action=save)
 - [Semagrow & KOBE](https://users.iit.demokritos.gr/~antru/federatedQueryKG_Semagrow_KOBE.pdf)
-- [HeFQUIN](https://docs.google.com/presentation/d/14MhRqXsPqvpLqOufMDV1kf4t27mNdoWUrGKseOANfG8/edit?usp=sharing)
+- [HeFQUIN](https://github.com/LiUSemWeb/HeFQUIN/)
 
 ## Use cases ##
 - [E-learning](https://github.com/MaastrichtU-IDS/federatedQueryKG/blob/main/usecaseE-learning.md)
