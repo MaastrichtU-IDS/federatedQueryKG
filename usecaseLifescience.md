@@ -84,7 +84,7 @@ WHERE {
 
 *Question:* From WikiPathways retrieve all genes that are part of the "GPR40 pathway" (https://identifiers.org/wikipathways/WP3958_r117148), and for each of these genes find all known orthologs, and in which taxon those orthologs can be found.
 
-The SPARQL query to WikiPathways should start like this (we let you figure out the rest for Wikidata!):
+The SPARQL query to WikiPathways should start like this:
 
 ```SPARQL
 PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
@@ -97,6 +97,22 @@ WHERE {
 
 You can find an example of a matching gene product with orthologs in this wikidata page: https://www.wikidata.org/wiki/Q14914567
 
+The SPARQL query for Wikidata:
+```SPARQL    
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+PREFIX wprdf: <http://rdf.wikipathways.org/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+SELECT DISTINCT ?gene ?ensemblId ?ortholog ?taxonLabel
+WHERE {
+    ?gene wdt:P594 ?ensemblId .
+    ?gene wdt:P684 ?ortholog . 
+    ?ortholog wdt:P703 ?taxon .
+    ?taxon rdfs:label ?taxonLabel .
+}
+```
+
+    
 ## WikiPathways x Bioregistry x Bio2RDF
 
 *Question:* Get genes from WikiPathways (which have [identifiers.org/ncbigene](http://identifiers.org/ncbigene) URIs), and map them to their HGNC external references in Bio2RDF. Doing so will require to use the Bioregistry SPARQL endpoint to convert the WikiPathways NCBIGene ID to its Bio2RDF equivalent.
